@@ -116,7 +116,8 @@ if __name__ == "__main__":
     for email in email_list:
         print(f"\nCHECKING: {email}")
         quora(email, results)
-        pinterest(email, spotify(email, results))
+        pinterest(email, results)
+        spotify(email, results)
 
     # Write results to output.txt
     with open('result.txt', 'w') as output_file:
